@@ -3,7 +3,7 @@ addpath util
 %%%INPUT PARAMETERS%%%
 
 modelFile = 'F:\projects\plane_mapping\plane_mapping_matlab_full\models\nov222011_set1_leftRight_kims_v2_heightsFixed_floorSplit\input_files\nov222011_set1_leftRight_kims_v2_heightsFixed_floorSplit.model';
-planesToUse = 0;
+planesToUse = 22;
 sortedAtlasFile = 'F:\projects\plane_mapping\plane_mapping_matlab_full\models\nov222011_set1_leftRight_kims_v2_heightsFixed_floorSplit\input_files\sortedAtlasImages.txt';
 imagesDir = 'E:\projects\indoormapping\data\20111122-1\images';
 lightClassificationDir = 'temp\classification\dir\1';
@@ -25,9 +25,8 @@ disp('preparing output dirs');
 setupOutputDirs(outputDir, outputRPInputFile, outputMapFile, modelFile, planes);
 
 disp('ready to begin actual stuff');
-keyboard
 for planeInd = 1:size(planesToUse,2)
     planeNum = planesToUse(planeInd);
     disp(['processing plane ', num2str(planeNum)]);
-    createVisualization(planes, planeNum, outputDir);
+    createVisualization(planes, planeNum);
 end
