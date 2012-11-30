@@ -6,9 +6,9 @@ modelFile = 'F:\projects\plane_mapping\plane_mapping_matlab_full\models\nov22201
 planesToUse = 22;
 sortedAtlasFile = 'F:\projects\plane_mapping\plane_mapping_matlab_full\models\nov222011_set1_leftRight_kims_v2_heightsFixed_floorSplit\input_files\sortedAtlasImages.txt';
 imagesDir = 'E:\projects\indoormapping\data\20111122-1\images';
-lightClassificationDir = 'temp\classification\dir\1';
-windowClassificationDir = 'temp\classification\dir\2';
-classificationDirs = [lightClassificationDir; windowClassificationDir];
+lightClassificationDir = 'Z:\ClassImgOutputs\light\CoryHall\20121119-1'
+%windowClassificationDir = 'temp\classification\dir\2';
+classificationDirs = [lightClassificationDir]; %; windowClassificationDir];
 
 %%%OUTPUT PARAMETERS%%%
 outputDir = 'F:\projects\indoorclassification\data\output\visualized';

@@ -18,11 +18,19 @@ for imgInd = 1:size(p.images,2)
     
     
     
-    testImg = zeros(p.height, p.width, 3);
+    testImg = zeros(p.height, p.width, 1);
     validPts = reshape(validPts, size(testImg(:,:,1)));
     
+    keyboard
     
-    
+    for cInd = 1:size(i.classifications,1)
+        %clData = load(i.classifications{cInd}, '-mat');
+        clData = load('Z:\ClassImgOutputs\light\CoryHall\20121119-1\leftCameraPostProcessed\left\Camera_110732781_Image001794.lt', '-mat');
+        clData = clData.tmpImg;
+        testImg(validPts) = clData(imagePts_linear);
+    end
+    keyboard
+        
     
     %%%Image Method
     %imageData = imread(i.img);
