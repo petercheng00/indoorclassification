@@ -45,11 +45,11 @@ class BinaryReader:
 
 
 def parseMadFile(filename):
-  f = open(filename, 'rb')
-  garbage = f.read(20)
-  for i in xrange(100):
-    numIMUmeas = struct.unpack('d', f.read(8))
-    print numIMUmeas
+  myReader = BinaryReader(filename)
+  print myReader.read('int32')
+  print myReader.read('double')
+  print myReader.read('double')
+  print myReader.read('int32')
 
 #  mad_file.read((char*)&numZUPTs, sizeof(int));
 #  for(int jj = 0; jj!=numZUPTs; ++jj)
@@ -78,4 +78,6 @@ def parseMadFile(filename):
 
 
 if __name__ == '__main__':
-    parseMadFile('lbnl_CL_3D.mad')
+  madpath = '/home/jason/Desktop/indoorclassification/jason/LBNL/20120312-1/output/lbnl_CL_3D.mad'
+  madpath = 'test.mad'
+  parseMadFile(madpath)
