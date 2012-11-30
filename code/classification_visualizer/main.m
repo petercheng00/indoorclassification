@@ -11,19 +11,21 @@ windowClassificationDir = 'temp\classification\dir\2';
 classificationDirs = [lightClassificationDir; windowClassificationDir];
 
 %%%OUTPUT PARAMETERS%%%
-outputDir = '';
-outputMapFile = '';
-outputRPInputFile = '';
+outputDir = 'F:\projects\indoorclassification\data\output\visualized';
+outputMapFile = 'tempMap.map';
+outputRPInputFile = 'tempRPInput.rpinput';
 
 disp('loading planes');
-planes = loadPlanes(modelFile);
+planes = loadPlanes(modelFile, outputDir);
 
 disp('loading images and classifications');
 planes = loadClassifications(planes, sortedAtlasFile, imagesDir, classificationDirs);
 
 disp('preparing output dirs');
-setupOutputDirs();
+setupOutputDirs(outputDir, outputRPInputFile, outputMapFile, modelFile, planes);
 
+disp('ready to begin actual stuff');
+keyboard
 for planeInd = 1:size(planesToUse,2)
     planeNum = planesToUse(planeInd);
     disp(['processing plane ', num2str(planeNum)]);

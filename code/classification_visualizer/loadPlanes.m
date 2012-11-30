@@ -1,4 +1,4 @@
-function loadedPlanes = loadPlanes( model_file )
+function loadedPlanes = loadPlanes( model_file, outputDir)
 
     model = dlmread(model_file, ' ');
     numPlanes = model(1);
@@ -72,7 +72,9 @@ function loadedPlanes = loadPlanes( model_file )
         newPlane.normal = normal';
         newPlane.d = plane_offset * 1000;
 
-
+        newPlane.outputDir = strcat(outputDir, '/', num2str(pnum));
+        newPlane.outputImg = 'img.jpg';
+        
         % Ratio is the number of pixels per centemeter or something. I'm not entirely sure. Just make
         % it larger if you want higher-resolution planes
         newPlane.ratio = 0.10;

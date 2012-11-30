@@ -1,0 +1,20 @@
+function setupOutputDirs(outputDir, outputRPInputFile, outputMapFile, modelFile, planes);
+
+mkdir(outputDir);
+
+rpInputfid = fopen(strcat(outputDir, '/', outputRPInputFile), 'W');
+fprintf(rpInputfid, strcat(outputDir, '/', modelFile, '\r\n'));
+fprintf(rpInputfid, strcat(outputDir, '/', outputMapFile, '\r\n'));
+fprintf(rpInputfid, 'noSave');
+fclose(rpInputfid);
+
+mapfid = fopen(strcat(outputDir, '/', outputMapFile), 'W');
+
+for planeInd = 1:size(planes,2)
+    fprintf(mapfid, [num2str(size(planes(planeInd).vertices,1)), '\n']);
+    fprintf(mapfid, strcat(planes(planeInd).outputDir, '/', planes(planeInd).outputFile));
+    for vertInd = 1:size(planes(planeInd).vertices,1)
+        fprintf(mapfid, [num2str(planes(planeInd).relCoords(vertInd, 1
+
+end
+

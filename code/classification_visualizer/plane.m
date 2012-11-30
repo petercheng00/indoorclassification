@@ -11,7 +11,8 @@ classdef plane < handle
         normal;
         d;
         ratio;
-        outimg;
+        outputDir;
+        outputImg;
         images = [];
     end
     
