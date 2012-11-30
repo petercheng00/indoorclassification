@@ -12,6 +12,7 @@ classdef plane < handle
         d;
         ratio;
         outputDir;
+        outputImgFile;
         outputImg;
         images = [];
     end

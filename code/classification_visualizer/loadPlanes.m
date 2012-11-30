@@ -73,7 +73,7 @@ function loadedPlanes = loadPlanes( model_file, outputDir)
         newPlane.d = plane_offset * 1000;
 
         newPlane.outputDir = strcat(outputDir, '/', num2str(pnum));
-        newPlane.outputImg = 'img.jpg';
+        newPlane.outputImgFile = 'img.jpg';
         
         % Ratio is the number of pixels per centemeter or something. I'm not entirely sure. Just make
         % it larger if you want higher-resolution planes

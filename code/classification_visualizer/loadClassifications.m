@@ -32,11 +32,11 @@ while ischar(firstLine)
     
     transLine = fgets(safid);
     transLine = transLine(3:(end-4));
-    newPlaneImg.t = transLine;
+    newPlaneImg.t = str2num(transLine);
     
     rotLine = fgets(safid);
     rotLine = rotLine(3:(end-4));
-    newPlaneImg.r = quat2rot(rotLine);
+    newPlaneImg.r = quat2rot(str2num(rotLine));
     
     %this is hardcoded
     fgets(safid);

@@ -1,5 +1,5 @@
 45
-F:/projects/indoorclassification/data/output/visualized/1/img.jpg
+F:/projects/indoorclassification/data/output/visualized/1/
 1 0.8455
 0.9722 0.8254
 0.9542 0.8195
@@ -46,7 +46,7 @@ F:/projects/indoorclassification/data/output/visualized/1/img.jpg
 0.5726 0.1282
 1 0.2604
 85
-F:/projects/indoorclassification/data/output/visualized/2/img.jpg
+F:/projects/indoorclassification/data/output/visualized/2/
 0.08254 0
 0.6422 0.3375
 0.6506 0.3444
@@ -133,7 +133,7 @@ F:/projects/indoorclassification/data/output/visualized/2/img.jpg
 0.5304 0.4071
 0 0.09001
 19
-F:/projects/indoorclassification/data/output/visualized/3/img.jpg
+F:/projects/indoorclassification/data/output/visualized/3/
 0.9672 0.7018
 0.9766 0.718
 0.9862 0.7526
@@ -154,7 +154,7 @@ F:/projects/indoorclassification/data/output/visualized/3/img.jpg
 0.8849 0.6338
 0.9745 0.7101
 58
-F:/projects/indoorclassification/data/output/visualized/4/img.jpg
+F:/projects/indoorclassification/data/output/visualized/4/
 1 0
 0.9835 0.0711
 0.9741 0.08771
@@ -214,7 +214,7 @@ F:/projects/indoorclassification/data/output/visualized/4/img.jpg
 0 0
 0 0
 50
-F:/projects/indoorclassification/data/output/visualized/5/img.jpg
+F:/projects/indoorclassification/data/output/visualized/5/
 0.9977 0.7061
 0.9684 0.8473
 0.9609 0.8915
@@ -266,7 +266,7 @@ F:/projects/indoorclassification/data/output/visualized/5/img.jpg
 1 0.2266
 0.9965 1
 71
-F:/projects/indoorclassification/data/output/visualized/6/img.jpg
+F:/projects/indoorclassification/data/output/visualized/6/
 0.976 0.2994
 0.683 0.3086
 0.6821 0.7703
@@ -339,7 +339,7 @@ F:/projects/indoorclassification/data/output/visualized/6/img.jpg
 0.9726 0.02065
 1 0.01512
 38
-F:/projects/indoorclassification/data/output/visualized/7/img.jpg
+F:/projects/indoorclassification/data/output/visualized/7/
 0.03447 0.8891
 0.1755 0.1941
 0 0.1169
@@ -379,7 +379,7 @@ F:/projects/indoorclassification/data/output/visualized/7/img.jpg
 0.3163 0.2368
 0.1589 1
 20
-F:/projects/indoorclassification/data/output/visualized/8/img.jpg
+F:/projects/indoorclassification/data/output/visualized/8/
 1 1
 0.4451 0.9714
 0.4704 0.8765
@@ -401,7 +401,7 @@ F:/projects/indoorclassification/data/output/visualized/8/img.jpg
 0.9318 0.6902
 0.8986 0.8999
 38
-F:/projects/indoorclassification/data/output/visualized/9/img.jpg
+F:/projects/indoorclassification/data/output/visualized/9/
 0.07596 0
 0.814 0.3822
 0.8337 0.2662
@@ -441,7 +441,7 @@ F:/projects/indoorclassification/data/output/visualized/9/img.jpg
 0.0121 0.5673
 0 0.555
 43
-F:/projects/indoorclassification/data/output/visualized/10/img.jpg
+F:/projects/indoorclassification/data/output/visualized/10/
 0.1422 0.0163
 1 0.07636
 0.9461 0.9894
@@ -486,7 +486,7 @@ F:/projects/indoorclassification/data/output/visualized/10/img.jpg
 0.02271 0.166
 0.02071 0
 35
-F:/projects/indoorclassification/data/output/visualized/11/img.jpg
+F:/projects/indoorclassification/data/output/visualized/11/
 0.0211 0.9728
 0.01138 0.5791
 0.03759 0.5759
@@ -523,7 +523,7 @@ F:/projects/indoorclassification/data/output/visualized/11/img.jpg
 0 0.9868
 0.01516 0.9103
 35
-F:/projects/indoorclassification/data/output/visualized/12/img.jpg
+F:/projects/indoorclassification/data/output/visualized/12/
 1 0.5967
 0.9982 0.6628
 0.9722 0.7597
@@ -560,7 +560,7 @@ F:/projects/indoorclassification/data/output/visualized/12/img.jpg
 1 0
 1 0.9422
 39
-F:/projects/indoorclassification/data/output/visualized/13/img.jpg
+F:/projects/indoorclassification/data/output/visualized/13/
 0.003738 0.9971
 0.03962 0.5734
 0.03375 0.5514
@@ -601,7 +601,7 @@ F:/projects/indoorclassification/data/output/visualized/13/img.jpg
 0.003738 0.9971
 0 1
 25
-F:/projects/indoorclassification/data/output/visualized/14/img.jpg
+F:/projects/indoorclassification/data/output/visualized/14/
 0.9035 0.7737
 0.6816 0.8052
 0.6061 0.8068
@@ -628,7 +628,7 @@ F:/projects/indoorclassification/data/output/visualized/14/img.jpg
 1 1
 0.9156 0.7361
 26
-F:/projects/indoorclassification/data/output/visualized/15/img.jpg
+F:/projects/indoorclassification/data/output/visualized/15/
 0.005444 0.01611
 0.02317 0.006727
 0.0673 0.004388
@@ -656,7 +656,7 @@ F:/projects/indoorclassification/data/output/visualized/15/img.jpg
 0 0.7879
 0 0.02347
 11
-F:/projects/indoorclassification/data/output/visualized/16/img.jpg
+F:/projects/indoorclassification/data/output/visualized/16/
 0 0.07598
 0.1342 0.1225
 0.2204 0.1006
@@ -669,7 +669,7 @@ F:/projects/indoorclassification/data/output/visualized/16/img.jpg
 1 1
 0.02137 0.9693
 16
-F:/projects/indoorclassification/data/output/visualized/17/img.jpg
+F:/projects/indoorclassification/data/output/visualized/17/
 0.08601 0.3973
 0 0.4345
 0 0
@@ -687,7 +687,7 @@ F:/projects/indoorclassification/data/output/visualized/17/img.jpg
 0.2032 0.5208
 0.1111 0.4037
 9
-F:/projects/indoorclassification/data/output/visualized/18/img.jpg
+F:/projects/indoorclassification/data/output/visualized/18/
 0.06899 0.9805
 0.7832 1
 0.7642 0.6721
@@ -698,115 +698,115 @@ F:/projects/indoorclassification/data/output/visualized/18/img.jpg
 0 0
 0 0.8912
 4
-F:/projects/indoorclassification/data/output/visualized/19/img.jpg
+F:/projects/indoorclassification/data/output/visualized/19/
 1 0
 0.9817 1
 0.106 0.9442
 0 0
 4
-F:/projects/indoorclassification/data/output/visualized/20/img.jpg
+F:/projects/indoorclassification/data/output/visualized/20/
 0 1
 0.98 0.2817
 1 0
 0 0.02239
 4
-F:/projects/indoorclassification/data/output/visualized/21/img.jpg
+F:/projects/indoorclassification/data/output/visualized/21/
 0 1
 0 0
 1 0
 1 1
 4
-F:/projects/indoorclassification/data/output/visualized/22/img.jpg
+F:/projects/indoorclassification/data/output/visualized/22/
 0 1
 0 0
 1 0
 1 1
 4
-F:/projects/indoorclassification/data/output/visualized/23/img.jpg
+F:/projects/indoorclassification/data/output/visualized/23/
 0 1
 0 0
 1 0
 1 1
 4
-F:/projects/indoorclassification/data/output/visualized/24/img.jpg
+F:/projects/indoorclassification/data/output/visualized/24/
 0 1
 0 0
 1 0
 1 1
 4
-F:/projects/indoorclassification/data/output/visualized/25/img.jpg
+F:/projects/indoorclassification/data/output/visualized/25/
 0 0
 0 1
 1 1
 1 0
 4
-F:/projects/indoorclassification/data/output/visualized/26/img.jpg
+F:/projects/indoorclassification/data/output/visualized/26/
 0 1
 0 0
 1 0
 1 1
 4
-F:/projects/indoorclassification/data/output/visualized/27/img.jpg
+F:/projects/indoorclassification/data/output/visualized/27/
 1 0
 1 1
 0 1
 0 0
 4
-F:/projects/indoorclassification/data/output/visualized/28/img.jpg
+F:/projects/indoorclassification/data/output/visualized/28/
 1 1
 1 0
 0 0
 0 1
 4
-F:/projects/indoorclassification/data/output/visualized/29/img.jpg
+F:/projects/indoorclassification/data/output/visualized/29/
 0 1
 0 0
 1 0
 1 1
 4
-F:/projects/indoorclassification/data/output/visualized/30/img.jpg
+F:/projects/indoorclassification/data/output/visualized/30/
 0 1
 0 0
 1 0
 1 1
 4
-F:/projects/indoorclassification/data/output/visualized/31/img.jpg
+F:/projects/indoorclassification/data/output/visualized/31/
 0 1
 0 0
 1 0
 1 1
 4
-F:/projects/indoorclassification/data/output/visualized/32/img.jpg
+F:/projects/indoorclassification/data/output/visualized/32/
 0 1
 0 0
 1 0
 1 1
 4
-F:/projects/indoorclassification/data/output/visualized/33/img.jpg
+F:/projects/indoorclassification/data/output/visualized/33/
 0 1
 0 0
 1 0
 1 1
 4
-F:/projects/indoorclassification/data/output/visualized/34/img.jpg
+F:/projects/indoorclassification/data/output/visualized/34/
 0 1
 0 0
 1 0
 1 1
 4
-F:/projects/indoorclassification/data/output/visualized/35/img.jpg
+F:/projects/indoorclassification/data/output/visualized/35/
 0 1
 0 0
 1 0
 1 1
 4
-F:/projects/indoorclassification/data/output/visualized/36/img.jpg
+F:/projects/indoorclassification/data/output/visualized/36/
 1 1
 1 0
 0 0
 0 1
 11
-F:/projects/indoorclassification/data/output/visualized/37/img.jpg
+F:/projects/indoorclassification/data/output/visualized/37/
 0 0.004935
 0.3849 0
 0.3858 0.3087
@@ -819,403 +819,403 @@ F:/projects/indoorclassification/data/output/visualized/37/img.jpg
 0.005382 1
 0.001765 0.3313
 4
-F:/projects/indoorclassification/data/output/visualized/38/img.jpg
+F:/projects/indoorclassification/data/output/visualized/38/
 1 0
 1 1
 0 1
 0 0
 4
-F:/projects/indoorclassification/data/output/visualized/39/img.jpg
+F:/projects/indoorclassification/data/output/visualized/39/
 0 1
 0 0
 1 0
 1 1
 4
-F:/projects/indoorclassification/data/output/visualized/40/img.jpg
+F:/projects/indoorclassification/data/output/visualized/40/
 0 1
 0 0
 1 0
 1 1
 4
-F:/projects/indoorclassification/data/output/visualized/41/img.jpg
+F:/projects/indoorclassification/data/output/visualized/41/
 1 1
 1 0
 0 0
 0 1
 4
-F:/projects/indoorclassification/data/output/visualized/42/img.jpg
+F:/projects/indoorclassification/data/output/visualized/42/
 0 1
 0 0
 1 0
 1 1
 4
-F:/projects/indoorclassification/data/output/visualized/43/img.jpg
+F:/projects/indoorclassification/data/output/visualized/43/
 0 1
 0 0
 1 0
 1 1
 4
-F:/projects/indoorclassification/data/output/visualized/44/img.jpg
+F:/projects/indoorclassification/data/output/visualized/44/
 1 0
 1 1
 0 1
 0 0
 4
-F:/projects/indoorclassification/data/output/visualized/45/img.jpg
+F:/projects/indoorclassification/data/output/visualized/45/
 0 1
 0 0
 1 0
 1 1
 4
-F:/projects/indoorclassification/data/output/visualized/46/img.jpg
+F:/projects/indoorclassification/data/output/visualized/46/
 0 1
 0 0
 1 0
 1 1
 4
-F:/projects/indoorclassification/data/output/visualized/47/img.jpg
+F:/projects/indoorclassification/data/output/visualized/47/
 1 1
 1 0
 0 0
 0 1
 4
-F:/projects/indoorclassification/data/output/visualized/48/img.jpg
+F:/projects/indoorclassification/data/output/visualized/48/
 1 1
 1 0
 0 0
 0 1
 4
-F:/projects/indoorclassification/data/output/visualized/49/img.jpg
+F:/projects/indoorclassification/data/output/visualized/49/
 0 1
 0 0
 1 0
 1 1
 4
-F:/projects/indoorclassification/data/output/visualized/50/img.jpg
+F:/projects/indoorclassification/data/output/visualized/50/
 0 1
 0 0
 1 0
 1 1
 4
-F:/projects/indoorclassification/data/output/visualized/51/img.jpg
+F:/projects/indoorclassification/data/output/visualized/51/
 1 0
 1 1
 0 1
 0 0
 4
-F:/projects/indoorclassification/data/output/visualized/52/img.jpg
+F:/projects/indoorclassification/data/output/visualized/52/
 0 1
 0 0
 1 0
 1 1
 4
-F:/projects/indoorclassification/data/output/visualized/53/img.jpg
+F:/projects/indoorclassification/data/output/visualized/53/
 0 1
 0 0
 1 0
 1 1
 4
-F:/projects/indoorclassification/data/output/visualized/54/img.jpg
+F:/projects/indoorclassification/data/output/visualized/54/
 0 1
 0 0
 1 0
 1 1
 4
-F:/projects/indoorclassification/data/output/visualized/55/img.jpg
+F:/projects/indoorclassification/data/output/visualized/55/
 1 0
 1 1
 0 1
 0 0
 4
-F:/projects/indoorclassification/data/output/visualized/56/img.jpg
+F:/projects/indoorclassification/data/output/visualized/56/
 0 1
 0 0
 1 0
 1 1
 4
-F:/projects/indoorclassification/data/output/visualized/57/img.jpg
+F:/projects/indoorclassification/data/output/visualized/57/
 0 1
 0 0
 1 0
 1 1
 4
-F:/projects/indoorclassification/data/output/visualized/58/img.jpg
+F:/projects/indoorclassification/data/output/visualized/58/
 0 1
 0 0
 1 0
 1 1
 4
-F:/projects/indoorclassification/data/output/visualized/59/img.jpg
+F:/projects/indoorclassification/data/output/visualized/59/
 0 0
 0 1
 1 1
 1 0
 4
-F:/projects/indoorclassification/data/output/visualized/60/img.jpg
+F:/projects/indoorclassification/data/output/visualized/60/
 0 1
 0 0
 1 0
 1 1
 4
-F:/projects/indoorclassification/data/output/visualized/61/img.jpg
+F:/projects/indoorclassification/data/output/visualized/61/
 1 0
 1 1
 0 1
 0 0
 4
-F:/projects/indoorclassification/data/output/visualized/62/img.jpg
+F:/projects/indoorclassification/data/output/visualized/62/
 1 0
 1 1
 0 1
 0 0
 4
-F:/projects/indoorclassification/data/output/visualized/63/img.jpg
+F:/projects/indoorclassification/data/output/visualized/63/
 1 1
 1 0
 0 0
 0 1
 4
-F:/projects/indoorclassification/data/output/visualized/64/img.jpg
+F:/projects/indoorclassification/data/output/visualized/64/
 1 1
 1 0
 0 0
 0 1
 4
-F:/projects/indoorclassification/data/output/visualized/65/img.jpg
+F:/projects/indoorclassification/data/output/visualized/65/
 0 1
 0 0
 1 0
 1 1
 4
-F:/projects/indoorclassification/data/output/visualized/66/img.jpg
+F:/projects/indoorclassification/data/output/visualized/66/
 1 1
 1 0
 0 0
 0 1
 4
-F:/projects/indoorclassification/data/output/visualized/67/img.jpg
+F:/projects/indoorclassification/data/output/visualized/67/
 0 1
 0 0
 1 0
 1 1
 4
-F:/projects/indoorclassification/data/output/visualized/68/img.jpg
+F:/projects/indoorclassification/data/output/visualized/68/
 0 1
 0 0
 1 0
 1 1
 4
-F:/projects/indoorclassification/data/output/visualized/69/img.jpg
+F:/projects/indoorclassification/data/output/visualized/69/
 0 1
 0 0
 1 0
 1 1
 4
-F:/projects/indoorclassification/data/output/visualized/70/img.jpg
+F:/projects/indoorclassification/data/output/visualized/70/
 1 0
 1 1
 0 1
 0 0
 4
-F:/projects/indoorclassification/data/output/visualized/71/img.jpg
+F:/projects/indoorclassification/data/output/visualized/71/
 0 1
 0 0
 1 0
 1 1
 4
-F:/projects/indoorclassification/data/output/visualized/72/img.jpg
+F:/projects/indoorclassification/data/output/visualized/72/
 1 1
 1 0
 0 0
 0 1
 4
-F:/projects/indoorclassification/data/output/visualized/73/img.jpg
+F:/projects/indoorclassification/data/output/visualized/73/
 0 1
 0 0
 1 0
 1 1
 4
-F:/projects/indoorclassification/data/output/visualized/74/img.jpg
+F:/projects/indoorclassification/data/output/visualized/74/
 0 1
 0 0
 1 0
 1 1
 4
-F:/projects/indoorclassification/data/output/visualized/75/img.jpg
+F:/projects/indoorclassification/data/output/visualized/75/
 0 1
 0 0
 1 0
 1 1
 4
-F:/projects/indoorclassification/data/output/visualized/76/img.jpg
+F:/projects/indoorclassification/data/output/visualized/76/
 1 0
 1 1
 0 1
 0 0
 4
-F:/projects/indoorclassification/data/output/visualized/77/img.jpg
+F:/projects/indoorclassification/data/output/visualized/77/
 0 1
 0 0
 1 0
 1 1
 4
-F:/projects/indoorclassification/data/output/visualized/78/img.jpg
+F:/projects/indoorclassification/data/output/visualized/78/
 1 1
 1 0
 0 0
 0 1
 4
-F:/projects/indoorclassification/data/output/visualized/79/img.jpg
+F:/projects/indoorclassification/data/output/visualized/79/
 0 1
 0 0
 1 0
 1 1
 4
-F:/projects/indoorclassification/data/output/visualized/80/img.jpg
+F:/projects/indoorclassification/data/output/visualized/80/
 1 1
 1 0
 0 0
 0 1
 4
-F:/projects/indoorclassification/data/output/visualized/81/img.jpg
+F:/projects/indoorclassification/data/output/visualized/81/
 0 1
 0 0
 1 0
 1 1
 4
-F:/projects/indoorclassification/data/output/visualized/82/img.jpg
+F:/projects/indoorclassification/data/output/visualized/82/
 1 0
 1 1
 0 1
 0 0
 4
-F:/projects/indoorclassification/data/output/visualized/83/img.jpg
+F:/projects/indoorclassification/data/output/visualized/83/
 0 1
 0 0
 1 0
 1 1
 4
-F:/projects/indoorclassification/data/output/visualized/84/img.jpg
+F:/projects/indoorclassification/data/output/visualized/84/
 1 1
 1 0
 0 0
 0 1
 4
-F:/projects/indoorclassification/data/output/visualized/85/img.jpg
+F:/projects/indoorclassification/data/output/visualized/85/
 1 1
 1 0
 0 0
 0 1
 4
-F:/projects/indoorclassification/data/output/visualized/86/img.jpg
+F:/projects/indoorclassification/data/output/visualized/86/
 0 1
 0 0
 1 0
 1 1
 4
-F:/projects/indoorclassification/data/output/visualized/87/img.jpg
+F:/projects/indoorclassification/data/output/visualized/87/
 0 1
 0 0
 1 0
 1 1
 4
-F:/projects/indoorclassification/data/output/visualized/88/img.jpg
+F:/projects/indoorclassification/data/output/visualized/88/
 1 0
 1 1
 0 1
 0 0
 4
-F:/projects/indoorclassification/data/output/visualized/89/img.jpg
+F:/projects/indoorclassification/data/output/visualized/89/
 1 0
 1 1
 0 1
 0 0
 4
-F:/projects/indoorclassification/data/output/visualized/90/img.jpg
+F:/projects/indoorclassification/data/output/visualized/90/
 0 1
 0 0
 1 0
 1 1
 4
-F:/projects/indoorclassification/data/output/visualized/91/img.jpg
+F:/projects/indoorclassification/data/output/visualized/91/
 0 1
 0 0
 1 0
 1 1
 4
-F:/projects/indoorclassification/data/output/visualized/92/img.jpg
+F:/projects/indoorclassification/data/output/visualized/92/
 0 1
 0 0
 1 0
 1 1
 4
-F:/projects/indoorclassification/data/output/visualized/93/img.jpg
+F:/projects/indoorclassification/data/output/visualized/93/
 1 1
 1 0
 0 0
 0 1
 4
-F:/projects/indoorclassification/data/output/visualized/94/img.jpg
+F:/projects/indoorclassification/data/output/visualized/94/
 0 1
 0 0
 1 0
 1 1
 4
-F:/projects/indoorclassification/data/output/visualized/95/img.jpg
+F:/projects/indoorclassification/data/output/visualized/95/
 0 1
 0 0
 1 0
 1 1
 4
-F:/projects/indoorclassification/data/output/visualized/96/img.jpg
+F:/projects/indoorclassification/data/output/visualized/96/
 1 0
 1 1
 0 1
 0 0
 4
-F:/projects/indoorclassification/data/output/visualized/97/img.jpg
+F:/projects/indoorclassification/data/output/visualized/97/
 1 0
 1 1
 0 1
 0 0
 4
-F:/projects/indoorclassification/data/output/visualized/98/img.jpg
+F:/projects/indoorclassification/data/output/visualized/98/
 1 0
 1 1
 0 1
 0 0
 4
-F:/projects/indoorclassification/data/output/visualized/99/img.jpg
+F:/projects/indoorclassification/data/output/visualized/99/
 0 1
 0 0
 1 0
 1 1
 4
-F:/projects/indoorclassification/data/output/visualized/100/img.jpg
+F:/projects/indoorclassification/data/output/visualized/100/
 1 0
 1 1
 0 1
 0 0
 4
-F:/projects/indoorclassification/data/output/visualized/101/img.jpg
+F:/projects/indoorclassification/data/output/visualized/101/
 0 1
 0 0
 1 0
 1 1
 4
-F:/projects/indoorclassification/data/output/visualized/102/img.jpg
+F:/projects/indoorclassification/data/output/visualized/102/
 1 1
 1 0
 0 0
 0 1
 4
-F:/projects/indoorclassification/data/output/visualized/103/img.jpg
+F:/projects/indoorclassification/data/output/visualized/103/
 1 0
 1 1
 0 1
 0 0
 4
-F:/projects/indoorclassification/data/output/visualized/104/img.jpg
+F:/projects/indoorclassification/data/output/visualized/104/
 1 1
 1 0
 0 0
