@@ -11,6 +11,8 @@ import math
 import cPickle
 import csv
 
+useCache = False
+
 class BinaryReaderEOFException(Exception):
     def __init__(self):
         pass
@@ -105,7 +107,7 @@ def parseModelFile(filename):
       str = f.readline()
 #      print str.rstrip().split()
       listofvertices[j,:] = np.array(str.rstrip().split())
-    listofplanes.append((i, numvertices, plane_ABCD, listofvertices))
+    listofplanes.append((i+1, numvertices, plane_ABCD, listofvertices))
   f.close()
   return listofplanes
     
@@ -126,6 +128,9 @@ def projectBack(tran_ctow, rot_ctow, listofplanes, kmat, dist_thres, angle_diff)
     planenormal = planenormal/np.linalg.norm(planenormal)
 #    print planenormal
 #    print cameradir
+    if not intersect(listofvertices[0,:], np.array(plane_ABCD[:-1]), np.array([tran_ctow[0,0], tran_ctow[1,0], tran_ctow[2,0]]),
+                      cameradir.T[0], dist_thres):
+      continue
     anglecamplane = math.degrees(math.acos(np.dot(planenormal, cameradir)/(np.linalg.norm(planenormal)*np.linalg.norm(cameradir))))
     if anglecamplane > angle_diff and anglecamplane < 180-angle_diff:
       continue
@@ -145,13 +150,25 @@ def projectBack(tran_ctow, rot_ctow, listofplanes, kmat, dist_thres, angle_diff)
       u = round(uv[0,0])
       v = round(uv[1,0])
 #      print u, v
-      dist_to_cam = np.linalg.norm(vertex-tran_ctow)
+#      dist_to_cam = np.linalg.norm(vertex-tran_ctow)
 #      print dist_to_cam
-      if 0<=u<udim and 0<=v<vdim and z>0 and dist_to_cam < dist_thres:
+      if 0<=u<udim and 0<=v<vdim and z>0:
         print "matched plane " + str(planenum)
+#        print u,v
         listofmatched.append(planenum)
         break
   return listofmatched
+
+def intersect(point, normal, raypos, raydir, threshold):
+#  print point, normal, raypos, raydir, threshold
+  if np.dot(raydir, normal) > 0:
+    normal = -normal
+    
+  d = -np.dot(point, normal)
+  t = -(np.dot(raypos, normal) + d)/(np.dot(-normal, normal))
+  if t < 0 or t > threshold:
+    return False
+  return True
   
 def getCloseTime(timekeys, time):
   difflist = [abs(x - time) for x in timekeys]
@@ -197,25 +214,26 @@ def mat_to_quat(mat):
   return (w,x,y,z)
 
 def getImagePlaneDict():
-  dist_thres = 1000 #maximum distance between camera and plane 
-  angle_diff = 90 #maximum difference in angle between plane normal and camera direction
+  dist_thres = 10 #maximum distance between camera and plane 
+  angle_diff = 30 #maximum difference in angle between plane normal and camera direction
   dataset = 'CoryHall'
   madpath = 'CoryHall/20121119-1/output/coryf3_CL_3D.mad'
   mcdpaths = ['CoryHall/right_right.mcd', 'CoryHall/right_up.mcd', 'CoryHall/left_left.mcd', 'CoryHall/left_up.mcd']
   modelpath = 'cory3rdfloorv3.model'
 
-  if not os.path.isfile(dataset+'.pkl'):
+  if not os.path.isfile(dataset+'.pkl') or useCache == False:
     img_plane_dict = {}
     timedict = parseMadFile(madpath)
     timekeys = timedict.keys()
+#    print sorted(timekeys)
     listofplanes = parseModelFile(modelpath)
-    for mcdpath in mcdpaths:
+    for mcdpath in mcdpaths[0:1]:
       kmat, rot, trans, listofimages = parseMCDFile(mcdpath)
       print "Number of Images:", len(listofimages)
       for i, imageinfo in enumerate(listofimages):
         imgpath, time = imageinfo
-    #    if i != 1300:
-    #      continue
+#        if i < 500 or i > 505:
+#          continue
         print imgpath
         closetime = getCloseTime(timekeys, time)
         
@@ -223,7 +241,7 @@ def getImagePlaneDict():
         r = math.radians(r)
         p = math.radians(p)
         y = math.radians(y)
-        totaltrans = np.array([np.add([x,y,z], trans)])
+        totaltrans = np.array([np.add(np.array([x,y,z]), trans)])
         totalrot = np.dot(rot, generateRotMat(r,p,y))
         matchedplanes = projectBack(totaltrans, totalrot, listofplanes, kmat, dist_thres, angle_diff)
         img_plane_dict[imgpath] = (totaltrans, mat_to_quat(totalrot), matchedplanes, kmat)
@@ -262,7 +280,7 @@ def findImagesforPlane(listofplanes, img_plane_dict, outputname):
   f.close()
   
 if __name__ == '__main__':
-  listofplanes = [1,2,3,4,5]
+  listofplanes = [1]
   img_plane_dict = getImagePlaneDict()
   outputname = 'results.txt'
   findImagesforPlane(listofplanes, img_plane_dict, outputname)
