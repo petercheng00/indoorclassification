@@ -9,6 +9,7 @@ import numpy as np
 import struct
 import math
 import cPickle
+import csv
 
 class BinaryReaderEOFException(Exception):
     def __init__(self):
@@ -166,39 +167,107 @@ def generateRotMat(roll, pitch, yaw):
   rotmat = np.dot(ymat, np.dot(pmat, rmat))
   return rotmat
 
+def mat_to_quat(mat):
+  epsilon = 0.00001
+  def copysign(x,y):
+    if y >= 0:
+      sign = 1
+    else:
+      sign = -1
+    return sign * abs(x)
+  
+  Qxx = mat[0,0]
+  Qyy = mat[1,1]
+  Qzz = mat[2,2]
+  
+  Qxy = mat[0,1]
+  Qxz = mat[0,2]
+  
+  Qyx = mat[1,0]
+  Qyz = mat[1,2]
+  
+  Qzx = mat[2,0]
+  Qzy = mat[2,1]
+    
+  t = Qxx+Qyy+Qzz
+  r = math.sqrt(1+t+epsilon)
+  w = 0.5*r
+  x = copysign(0.5*math.sqrt(1+Qxx-Qyy-Qzz+epsilon), Qzy-Qyz)
+  y = copysign(0.5*math.sqrt(1-Qxx+Qyy-Qzz+epsilon), Qxz-Qzx)
+  z = copysign(0.5*math.sqrt(1-Qxx-Qyy+Qzz+epsilon), Qyx-Qxy)
+  
+  return (w,x,y,z)
+
+def getImagePlaneDict():
+  dist_thres = 1000 #maximum distance between camera and plane 
+  angle_diff = 90 #maximum difference in angle between plane normal and camera direction
+  dataset = 'CoryHall'
+  madpath = 'CoryHall/20121119-1/output/coryf3_CL_3D.mad'
+  mcdpaths = ['CoryHall/right_right.mcd', 'CoryHall/right_up.mcd', 'CoryHall/left_left.mcd', 'CoryHall/left_up.mcd']
+  modelpath = 'cory3rdfloorv3.model'
+
+  if not os.path.isfile(dataset+'.pkl'):
+    img_plane_dict = {}
+    timedict = parseMadFile(madpath)
+    timekeys = timedict.keys()
+    listofplanes = parseModelFile(modelpath)
+    for mcdpath in mcdpaths:
+      kmat, rot, trans, listofimages = parseMCDFile(mcdpath)
+      print "Number of Images:", len(listofimages)
+      for i, imageinfo in enumerate(listofimages):
+        imgpath, time = imageinfo
+    #    if i != 1300:
+    #      continue
+        print imgpath
+        closetime = getCloseTime(timekeys, time)
+        
+        x,y,z,r,p,y = timedict[closetime]
+        r = math.radians(r)
+        p = math.radians(p)
+        y = math.radians(y)
+        totaltrans = np.array([np.add([x,y,z], trans)])
+        totalrot = np.dot(rot, generateRotMat(r,p,y))
+        matchedplanes = projectBack(totaltrans, totalrot, listofplanes, kmat, dist_thres, angle_diff)
+        img_plane_dict[imgpath] = (totaltrans, mat_to_quat(totalrot), matchedplanes, kmat)
+  
+    with open(dataset + '.pkl', 'wb') as f:
+      cPickle.dump(img_plane_dict, f)
+      
+  else:
+    with open(dataset+'.pkl', 'rb') as f:
+      img_plane_dict = cPickle.load(f)
+  
+  return img_plane_dict
+
+def findImagesforPlane(listofplanes, img_plane_dict, outputname):
+  def mat2string(a):
+    myStr = ''
+    h,w = a.shape
+    a = np.reshape(a, h*w)
+    for i in xrange(h*w):
+      myStr += str(a[i]) + ' '
+    return myStr.rstrip()
+  def array2string(a):
+    myStr = ''
+    for element in a:
+      myStr += str(element) + ' '
+    return myStr.rstrip()
+  f = open(outputname, 'wb')
+  myWriter = csv.writer(f, delimiter=';')
+  myWriter.writerow(['Plane Number', 'Image Path', 'Translation', 'Rotation', 'K Matrix'])
+  for imgpath, imginfo in img_plane_dict.items():
+    tran, rot, matchedplanes, kmat = imginfo
+    for plane in listofplanes:
+      if plane in matchedplanes:
+        myWriter.writerow([str(plane), imgpath, mat2string(tran), array2string(rot), mat2string(kmat)])
+
+  f.close()
   
 if __name__ == '__main__':
-  dist_thres = 1000
-  angle_diff = 90
-  madpath = '/home/jason/Desktop/indoorclassification/jason/CoryHall/20121119-1/output/coryf3_CL_3D.mad'
-  mcdpath = '/home/jason/Desktop/indoorclassification/jason/CoryHall/20121119-1/images/leftCameraPostProcessed/up/Camera_110732783_20121119_1.mcd'
-  modelpath = '/home/jason/Desktop/indoorclassification/jason/cory3rdfloorv3.model'
-
-  img_plane_dict = {}
-  timedict = parseMadFile(madpath)
-  timekeys = timedict.keys()
-  kmat, rot, trans, listofimages = parseMCDFile(mcdpath)
-  print "Number of Images:", len(listofimages)
-  listofplanes = parseModelFile(modelpath) 
-  for i, imageinfo in enumerate(listofimages):
-    imgpath, time = imageinfo
-#    if i != 1300:
-#      continue
-    print imgpath
-    closetime = getCloseTime(timekeys, time)
-    
-    x,y,z,r,p,y = timedict[closetime]
-    r = math.radians(r)
-    p = math.radians(p)
-    y = math.radians(y)
-    totaltrans = np.array([np.add([x,y,z], trans)])
-    totalrot = np.dot(rot, generateRotMat(r,p,y))
-    matchedplanes = projectBack(totaltrans, totalrot, listofplanes, kmat, dist_thres, angle_diff)
-    img_plane_dict[imgpath] = matchedplanes
-  
-  f = open(madpath.split('/')[-1] + "_" + mcdpath.split('/')[-1] + '_'+modelpath.split('/')[-1]+'.pkl', 'wb')
-  cPickle.dump(img_plane_dict, f)
-  f.close()
+  listofplanes = [1,2,3,4,5]
+  img_plane_dict = getImagePlaneDict()
+  outputname = 'results.txt'
+  findImagesforPlane(listofplanes, img_plane_dict, outputname)
   
     
   
