@@ -214,20 +214,13 @@ def mat_to_quat(mat):
   return (w,x,y,z)
 
 def getImagePlaneDict():
-  dist_thres = 10 #maximum distance between camera and plane 
-  angle_diff = 30 #maximum difference in angle between plane normal and camera direction
-  dataset = 'CoryHall'
-  madpath = 'CoryHall/20121119-1/output/coryf3_CL_3D.mad'
-  mcdpaths = ['CoryHall/right_right.mcd', 'CoryHall/right_up.mcd', 'CoryHall/left_left.mcd', 'CoryHall/left_up.mcd']
-  modelpath = 'cory3rdfloorv3.model'
-
   if not os.path.isfile(dataset+'.pkl') or useCache == False:
     img_plane_dict = {}
     timedict = parseMadFile(madpath)
     timekeys = timedict.keys()
 #    print sorted(timekeys)
     listofplanes = parseModelFile(modelpath)
-    for mcdpath in mcdpaths[0:1]:
+    for mcdpath in mcdpaths:
       kmat, rot, trans, listofimages = parseMCDFile(mcdpath)
       print "Number of Images:", len(listofimages)
       for i, imageinfo in enumerate(listofimages):
@@ -280,8 +273,15 @@ def findImagesforPlane(listofplanes, img_plane_dict, outputname):
   f.close()
   
 if __name__ == '__main__':
-  listofplanes = [1]
+  angle_diff = 30 #maximum difference in angle between plane normal and camera direction
+  dist_thres = 10 #maximum distance between camera and plane 
+  dataset = 'CoryHall'
+  madpath = 'CoryHall/20121119-1/output/coryf3_CL_3D.mad'
+  mcdpaths = ['CoryHall/right_right.mcd', 'CoryHall/right_up.mcd', 'CoryHall/left_left.mcd', 'CoryHall/left_up.mcd']
+  modelpath = 'cory3rdfloorv3.model'
   img_plane_dict = getImagePlaneDict()
+  
+  listofplanes = [1]
   outputname = 'results.txt'
   findImagesforPlane(listofplanes, img_plane_dict, outputname)
   
