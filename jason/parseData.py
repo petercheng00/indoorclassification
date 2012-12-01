@@ -8,6 +8,7 @@ import sys
 import numpy as np
 import struct
 import math
+import cPickle
 
 class BinaryReaderEOFException(Exception):
     def __init__(self):
@@ -87,7 +88,8 @@ def parseMCDFile(filename):
     imgpath, time = f.readline().rstrip().split()
     time = float(time)
     listofimages.append((imgpath, time))
-    
+  
+  f.close()
   return (kmat, rot_offset, trans_offset, listofimages)
     
 def parseModelFile(filename):
@@ -104,6 +106,7 @@ def parseModelFile(filename):
 #      print str.rstrip().split()
       listofvertices[j,:] = np.array(str.rstrip().split())
     listofplanes.append((i, numvertices, plane_ABCD, listofvertices))
+  f.close()
   return listofplanes
     
 def projectBack(tran_ctow, rot_ctow, listofplanes, kmat, dist_thres, angle_diff):
@@ -146,7 +149,7 @@ def projectBack(tran_ctow, rot_ctow, listofplanes, kmat, dist_thres, angle_diff)
       dist_to_cam = np.linalg.norm(vertex-tran_ctow)
 #      print dist_to_cam
       if 0<=u<udim and 0<=v<vdim and z>0 and dist_to_cam < dist_thres:
-        print "matched " + str(planenum)
+        print "matched plane " + str(planenum)
         listofmatched.append(planenum)
         break
   return listofmatched
@@ -165,8 +168,8 @@ def generateRotMat(roll, pitch, yaw):
 
   
 if __name__ == '__main__':
-  dist_thres = 10
-  angle_diff = 45
+  dist_thres = 1000
+  angle_diff = 90
   madpath = '/home/jason/Desktop/indoorclassification/jason/CoryHall/20121119-1/output/coryf3_CL_3D.mad'
   mcdpath = '/home/jason/Desktop/indoorclassification/jason/CoryHall/20121119-1/images/leftCameraPostProcessed/up/Camera_110732783_20121119_1.mcd'
   modelpath = '/home/jason/Desktop/indoorclassification/jason/cory3rdfloorv3.model'
@@ -179,8 +182,9 @@ if __name__ == '__main__':
   listofplanes = parseModelFile(modelpath) 
   for i, imageinfo in enumerate(listofimages):
     imgpath, time = imageinfo
-    if i != 1300:
-      continue
+#    if i != 1300:
+#      continue
+    print imgpath
     closetime = getCloseTime(timekeys, time)
     
     x,y,z,r,p,y = timedict[closetime]
@@ -192,6 +196,9 @@ if __name__ == '__main__':
     matchedplanes = projectBack(totaltrans, totalrot, listofplanes, kmat, dist_thres, angle_diff)
     img_plane_dict[imgpath] = matchedplanes
   
-  print img_plane_dict
+  f = open(madpath.split('/')[-1] + "_" + mcdpath.split('/')[-1] + '_'+modelpath.split('/')[-1]+'.pkl', 'wb')
+  cPickle.dump(img_plane_dict, f)
+  f.close()
+  
     
   
