@@ -46,7 +46,6 @@ class BinaryReader:
     def __del__(self):
         self.file.close()
 
-
 def parseMadFile(filename):
   myReader = BinaryReader(filename)
   numZUPTs = myReader.read('int32')
@@ -114,7 +113,7 @@ def projectBack(tran_ctow, rot_ctow, listofplanes, kmat, dist_thres, angle_diff)
   udim = kmat[0, 2]*2
   vdim = kmat[1, 2]*2
   kmatinv = np.linalg.inv(kmat)
-  centerofcamera = np.transpose(np.array([[udim/2, vdim/2 , 1]]))
+  centerofcamera = np.transpose(np.array([[kmat[0, 2], kmat[1, 2] , 1]]))
   cameradir = np.dot(rot_ctow, np.dot(kmatinv, centerofcamera))
       
   tran_ctow = np.transpose(tran_ctow)
@@ -123,7 +122,6 @@ def projectBack(tran_ctow, rot_ctow, listofplanes, kmat, dist_thres, angle_diff)
   
   listofmatched = []
   for planenum, numvertices, plane_ABCD, listofvertices in listofplanes:
-    h, w = listofvertices.shape
     planenormal = np.array([plane_ABCD[:-1]])
     planenormal = planenormal/np.linalg.norm(planenormal)
 #    print planenormal
@@ -131,7 +129,7 @@ def projectBack(tran_ctow, rot_ctow, listofplanes, kmat, dist_thres, angle_diff)
     anglecamplane = math.degrees(math.acos(np.dot(planenormal, cameradir)/(np.linalg.norm(planenormal)*np.linalg.norm(cameradir))))
     if anglecamplane > angle_diff and anglecamplane < 180-angle_diff:
       continue
-    for i in xrange(h):
+    for i in xrange(numvertices):
       vertex = np.transpose([listofvertices[i,:]])
       pcamera = np.add(np.dot(rot_wtoc, vertex), tran_wtoc)
       z = pcamera[2,0]
