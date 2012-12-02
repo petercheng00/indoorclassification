@@ -1,0 +1,60 @@
+Y:\data\LBNL\20120312-1\images\rightCameraPostProcessed/right/Camera_110732692_Image000940.jpg for plane 1
+| -13989.6 -11784.4 458.978 |
+| 0.447769 0.521266 0.526722 -0.500349 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\rightCameraPostProcessed/right/Camera_110732692_Image001110.jpg for plane 1
+| -11154.8 -12669.6 487.623 |
+| 0.482473 0.476793 0.53955 -0.498772 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\rightCameraPostProcessed/right/Camera_110732692_Image001111.jpg for plane 1
+| -11132 -12735 489.602 |
+| 0.505338 0.443306 0.57307 -0.468727 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\rightCameraPostProcessed/right/Camera_110732692_Image001395.jpg for plane 1
+| -6396.6 -12882.5 466.037 |
+| 0.491244 0.492816 0.532018 -0.482461 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\rightCameraPostProcessed/right/Camera_110732692_Image001391.jpg for plane 1
+| -6365.75 -12628.4 461.937 |
+| 0.334947 0.620207 0.386921 -0.594513 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\rightCameraPostProcessed/right/Camera_110732692_Image001248.jpg for plane 1
+| -9321.43 -12507.1 490.623 |
+| 0.484934 0.462262 0.561274 -0.485926 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\rightCameraPostProcessed/right/Camera_110732692_Image001108.jpg for plane 1
+| -11165.7 -12566.1 489.775 |
+| -0.414689 -0.541132 -0.474773 0.556597 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\rightCameraPostProcessed/right/Camera_110732692_Image001107.jpg for plane 1
+| -11160.4 -12504.4 483.326 |
+| -0.383901 -0.57279 -0.43366 0.58006 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\rightCameraPostProcessed/right/Camera_110732692_Image001247.jpg for plane 1
+| -9327.87 -12447.9 489.205 |
+| 0.44955 0.498259 0.536155 -0.512036 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\rightCameraPostProcessed/right/Camera_110732692_Image001197.jpg for plane 1
+| -8938.27 -9423.76 501.629 |
+| -0.337632 -0.582745 -0.424511 0.605147 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |

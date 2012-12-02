@@ -132,6 +132,7 @@ def projectBack(tran_ctow, rot_ctow, listofplanes, kmat, dist_thres, angle_diff)
                       cameradir.T[0], dist_thres):
       continue
     anglecamplane = math.degrees(math.acos(np.dot(planenormal, cameradir)/(np.linalg.norm(planenormal)*np.linalg.norm(cameradir))))
+    anglecamplane = anglecamplane + 180
     if anglecamplane > angle_diff and anglecamplane < 180-angle_diff:
       continue
     for i in xrange(numvertices):
@@ -273,15 +274,15 @@ def findImagesforPlane(listofplanes, img_plane_dict, outputname):
   f.close()
   
 if __name__ == '__main__':
-  angle_diff = 30 #maximum difference in angle between plane normal and camera direction
-  dist_thres = 10 #maximum distance between camera and plane 
+  angle_diff = 1 #maximum difference in angle between plane normal and camera direction
+  dist_thres = 5 #maximum distance between camera and plane 
   dataset = 'CoryHall'
   madpath = 'CoryHall/20121119-1/output/coryf3_CL_3D.mad'
   mcdpaths = ['CoryHall/right_right.mcd', 'CoryHall/right_up.mcd', 'CoryHall/left_left.mcd', 'CoryHall/left_up.mcd']
   modelpath = 'cory3rdfloorv3.model'
   img_plane_dict = getImagePlaneDict()
   
-  listofplanes = [1]
+  listofplanes = [2]
   outputname = 'results.txt'
   findImagesforPlane(listofplanes, img_plane_dict, outputname)
   

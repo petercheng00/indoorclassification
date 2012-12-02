@@ -2,8 +2,9 @@ import sys
 from math import *
 
 
-RevitScale = 0.000022192257
-distThresh = 0.0001
+RevitScale = 0.00002556639
+distThreshVertex = 0.1
+distThreshPlane = 1
 sizeThresh = 1
 
 
@@ -172,9 +173,9 @@ def validVertex(v, plane):
         return True
     prevVertex = plane[len(plane)-1]
     if len(plane) >= 1:
-        if ((within(prevVertex[0], v[0], distThresh)) and
-            (within(prevVertex[1], v[1], distThresh)) and
-            (within(prevVertex[2], v[2], distThresh))):
+        if ((within(prevVertex[0], v[0], distThreshVertex)) and
+            (within(prevVertex[1], v[1], distThreshVertex)) and
+            (within(prevVertex[2], v[2], distThreshVertex))):
             return False
     if len(plane) >= 2:
         prevVertex2 = plane[len(plane)-2]
@@ -213,8 +214,7 @@ def readFile(fileName):
             if ((len(currPlane) > 2) and
                 (perimSub2(currPlane) > sizeThresh) and
                 (not (sameNormal(currNorm, prevNorm) and 
-                    (dist(currCenter, prevCenter) < distThresh)))):
-                    
+                    (dist(currCenter, prevCenter) < distThreshPlane)))):
                 planes.append(currPlane)
                 prevNorm = currNorm
                 prevCenter = currCenter

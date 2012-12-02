@@ -1,0 +1,18 @@
+Y:\data\CoryHall\20121119-1\images\rightCameraPostProcessed/right/Camera_110732692_Image001646.jpg for plane 0
+| 3586.83 11254 448.529 |
+| -0.0124205 0.727654 -0.0140609 -0.685688 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\CoryHall\20121119-1\images\rightCameraPostProcessed/right/Camera_110732692_Image001653.jpg for plane 0
+| 3558.76 10539.3 459.658 |
+| -0.00917441 0.71265 -0.0100474 -0.701388 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\CoryHall\20121119-1\images\rightCameraPostProcessed/right/Camera_110732692_Image001645.jpg for plane 0
+| 3633.32 11265.8 457.58 |
+| -0.049591 0.722011 -0.0458608 -0.688576 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |

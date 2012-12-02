@@ -15,14 +15,15 @@ while ischar(firstLine)
     index = strfind(firstLine, '_');
     index = index(end);
     maskFile = firstLine(1:index);
-    maskFile = strcat(imageDir, '/', maskFile);
+    %maskFile = strcat(imageDir, '/', maskFile);
     maskFile = strcat(strrep(maskFile, '\', '/'), 'Mask.bmp');
     newPlaneImg.mask = maskFile;
     
     index = strfind(firstLine, ' ');
     index = index(1);
     imageFile = firstLine(1:index);
-    imagePath = strcat(imageDir, '/', firstLine(1:index));
+    imagePath = firstLine(1:index);
+    %imagePath = strcat(imageDir, '/', firstLine(1:index));
     imagePath = strrep(imagePath, '\', '/');
     newPlaneImg.img = imagePath;
     

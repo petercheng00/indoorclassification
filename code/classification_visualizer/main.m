@@ -2,18 +2,20 @@ addpath util
 
 %%%INPUT PARAMETERS%%%
 
-modelFile = 'F:\projects\plane_mapping\plane_mapping_matlab_full\models\nov222011_set1_leftRight_kims_v2_heightsFixed_floorSplit\input_files\nov222011_set1_leftRight_kims_v2_heightsFixed_floorSplit.model';
-planesToUse = 22;
-sortedAtlasFile = 'F:\projects\plane_mapping\plane_mapping_matlab_full\models\nov222011_set1_leftRight_kims_v2_heightsFixed_floorSplit\input_files\sortedAtlasImages.txt';
-imagesDir = 'E:\projects\indoormapping\data\20111122-1\images';
+modelFile = 'F:\projects\indoorclassification\data\input\lbnl\model\revit\lbnlv2.model';
+
+%first plane is plane 1
+planesToUse = 2;
+sortedAtlasFile = 'F:\projects\indoorclassification\data\input\lbnl\output\imagesFile.txt';
+imagesDir = 'Y:\data\LBNL\20120312-1\images';
 lightClassificationDir = 'Z:\ClassImgOutputs\light\CoryHall\20121119-1'
 %windowClassificationDir = 'temp\classification\dir\2';
 classificationDirs = [lightClassificationDir]; %; windowClassificationDir];
 
 %%%OUTPUT PARAMETERS%%%
-outputDir = 'F:\projects\indoorclassification\data\output\visualized';
-outputMapFile = 'tempMap.map';
-outputRPInputFile = 'tempRPInput.rpinput';
+outputDir = 'F:\projects\indoorclassification\data\output\visualized\lbnl';
+outputMapFile = 'lbnlMap.map';
+outputRPInputFile = 'lbnlRPInput.rpinput';
 
 disp('loading planes');
 planes = loadPlanes(modelFile, outputDir);
