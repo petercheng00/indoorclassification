@@ -7,10 +7,10 @@ p.outputImg = zeros(p.height, p.width, 3);
 plane_pts = getPlanePtsOnPlane(p);
 world_pts = getWorldPtsFromPlanePts(p, plane_pts);
 
-heatMap = zeros(p.height, p.width, 1);
+
 
 for imgInd = 1:size(p.images,2)
-    
+    disp['plane ', imgInd, ' - img ', imgInd, ' of ', size(p.images,2)];
     i = p.images(imgInd);
     
     cameraPts = getCameraPtsFromWorldPts(i, world_pts);
@@ -22,14 +22,15 @@ for imgInd = 1:size(p.images,2)
     imageData = imread(i.img);
     validPts = reshape(validPts, size(p.outputImg(:,:,1)));
         
-    for cInd = 1:size(i.classifications,1)
-        %clData = load(i.classifications{cInd}, '-mat');
-        %clData = load('Z:\ClassImgOutputs\light\CoryHall\20121119-1\leftCameraPostProcessed\left\Camera_110732781_Image001794.lt', '-mat');
-        %clData = clData.tmpImg;
-        clData = zeros(size(imageData));
-        a = size(clData,1);
-        clData(round(a*0.25):round(a*0.75), round(a*0.25):round(a*0.75)) = 1;
-        heatMap(validPts) = clData(imagePts_linear)';
+    for cInd = 1:size(i.classifications,2)
+        if (exist(i.classifications{cInd}, 'file') == 2)
+            clData = load(i.classifications{cInd}, '-mat');
+            clData = clData.imgClass;
+            
+            currClassMask = zeros(p.height, p.width);
+            currClassMask(validPts) = clData(imagePts_linear)';
+            p.outputImg(:,:,1) = p.outputImg(:,:,1) + currClassMask;
+        end
     end
     
     %%Image Method
@@ -41,11 +42,9 @@ for imgInd = 1:size(p.images,2)
     %    tmp_dest(validPts) = tmp_img(imagePts_linear)';
     %    p.outputImg(:,:,chan) = tmp_dest;
     %end
-    
-    keyboard
-
 end
-
+maxVal = max(max(p.outputImg(:,:,1)));
+p.outputImg = p.outputImg / maxVal;
 end
 
 function im_pts_linear = linearizePts(i, im_pts)

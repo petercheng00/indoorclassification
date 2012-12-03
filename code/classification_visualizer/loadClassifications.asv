@@ -46,13 +46,14 @@ while ischar(firstLine)
     newPlaneImg.K = [612 0 1224; 0 612 1024; 0 0 1];
     
     %now grab related classification matrices
-    for classInd = 1:size(classificationDirs, 2)
+    for classInd = 1:size(classificationDirs, 1)
         imageBegin = strfind(imageFile, 'images');
         imageRelPath = imageFile(imageBegin+6:end);
-        classFile = strcat(classificationDirs{classInd}, imageRelPath);
+        classFile = strcat(classificationDirs(classInd,:), '/', imageFile);
         classFile = strrep(classFile, '\', '/');
         classFile = strrep(classFile, '.jpg', '.mat');
         newPlaneImg.classifications{classInd} = classFile;
+        keyboard
     end
     
     planes(planeInd+1).images = [planes(planeInd+1).images, newPlaneImg];

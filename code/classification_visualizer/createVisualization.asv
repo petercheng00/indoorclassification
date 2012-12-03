@@ -8,9 +8,8 @@ plane_pts = getPlanePtsOnPlane(p);
 world_pts = getWorldPtsFromPlanePts(p, plane_pts);
 
 
+
 for imgInd = 1:size(p.images,2)
-    
-    classificationVotes = zeros(p.height, p.width, size(i.classifications,1));
     
     i = p.images(imgInd);
     
@@ -23,14 +22,16 @@ for imgInd = 1:size(p.images,2)
     imageData = imread(i.img);
     validPts = reshape(validPts, size(p.outputImg(:,:,1)));
         
-    for cInd = 1:size(i.classifications,1)
-        %clData = load(i.classifications{cInd}, '-mat');
-        %clData = load('Z:\ClassImgOutputs\light\CoryHall\20121119-1\leftCameraPostProcessed\left\Camera_110732781_Image001794.lt', '-mat');
-        %clData = clData.tmpImg;
-        clData = zeros(size(imageData));
-        a = size(clData,1);
-        clData(round(a*0.25):round(a*0.75), round(a*0.25):round(a*0.75)) = 1;
-        classificationVotes(validPts, cInd) = clData(imagePts_linear)';
+    for cInd = 1:size(i.classifications,2)
+        if (exist(i.classifications{cInd}, 'file') == 2)
+            clData = load(i.classifications{cInd}, '-mat');
+            clData = clData.imgClass;
+            
+            currClassMask = zeros(p.height, p.width);
+            currClassMask(validPts) = clData(imagePts_linear)';
+            p.outputImg(:,:,1) = p.outputImg(:,:,1) + curr
+            keyboard
+        end
     end
     
     %%Image Method
