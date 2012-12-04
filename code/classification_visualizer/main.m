@@ -5,7 +5,7 @@ addpath util
 modelFile = 'F:\projects\indoorclassification\data\input\lbnl\model\revit\lbnlv2.model';
 
 %first plane is plane 1
-planesToUse = 1:6;
+planesToUse = 1:57;
 sortedAtlasFile = 'F:\projects\indoorclassification\data\input\lbnl\output\imagesFile.txt';
 imagesDir = 'Y:\data\LBNL\20120312-1\images';
 lightClassificationDir = 'Z:\ClassImgOutputs\light\LBNL\20120312-1';

@@ -51,7 +51,11 @@ while ischar(firstLine)
         imageRelPath = imageFile(imageBegin+6:end);
         classFile = strcat(classificationDirs{classInd}, imageRelPath);
         classFile = strrep(classFile, '\', '/');
-        classFile = strrep(classFile, '.jpg', '.mat');
+        if classInd == 1
+            classFile = strrep(classFile, '.jpg', '.lt');
+        elseif classInd == 2
+            classFile = strrep(classFile, '.jpg', '.mat');
+        end
         newPlaneImg.classifications{classInd} = classFile;
     end
     

@@ -22,7 +22,7 @@ modelFile = F:\projects\indoorclassification\data\input\lbnl\model\revit\lbnlv2.
 //plyFile = F:\projects\indoorclassification\data\input\cory3rdfloor\model\coryf3_noborders.ply
 
 //Planes to texture. Specify individual plane numbers delimited by commas, or ranges. Ex: 4, 6, 8-12, 25
-planesToTexture = 0-5
+planesToTexture = 0-56
 
 //Output dir. This is where the output images and map file will be saved
 outputDir = F:\projects\indoorclassification\data\input\lbnl\output

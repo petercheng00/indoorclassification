@@ -6,7 +6,7 @@ modelFile = 'F:\projects\indoorclassification\data\input\lbnl\model\revit\lbnlv2
 
 %first plane is plane 1
 planesToUse = 2;
-sortedAtlasFile = 'F:\projects\indoorclassification\data\input\lbnl\output\imagesFile.txt';
+sortedAtlasFile = 'F:\projects\indoorclassification\data\input\lbnl\output\imagesFile1.txt';
 imagesDir = 'Y:\data\LBNL\20120312-1\images';
 lightClassificationDir = 'Z:\ClassImgOutputs\light\LBNL\20120312-1';
 windowClassificationDir = 'Z:\ClassImgOutputs\window';
@@ -31,7 +31,8 @@ for planeInd = 1:size(planesToUse,2)
     planeNum = planesToUse(planeInd);
     disp(['processing plane ', num2str(planeNum)]);
     createVisualization(planes, planeNum);
-    keyboard
-    imwrite(planes(planeNum).outputImg, strcat(outputDir, 
-    keyboard
+    mkdir(planes(planeNum).outputDir);
+    imgFileOut = strcat(planes(planeNum).outputDir, '/', planes(planeNum).outputImgFile);
+    imgFileOut = strrep(imgFileOut, '\', '/');
+    imwrite(planes(planeNum).outputImg, imgFileOut);
 end

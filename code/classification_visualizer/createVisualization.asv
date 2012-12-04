@@ -3,34 +3,58 @@ function createVisualization(planes, planeNum);
 p = planes(planeNum);
 
 p.outputImg = zeros(p.height, p.width, 3);
-
+numVotes = zeros(p.height, p.width);
 plane_pts = getPlanePtsOnPlane(p);
 world_pts = getWorldPtsFromPlanePts(p, plane_pts);
 
-
+%masks = zeros(p.height, p.width, 0);
+%maskInd = 1;
 
 for imgInd = 1:size(p.images,2)
-    
+
+    disp(['plane ', num2str(planeNum), ', img ', num2str(imgInd), ' of ', num2str(size(p.images,2))]);
     i = p.images(imgInd);
-    
+    if (exist(i.img, 'file') ~= 2)
+        continue;
+    end
     cameraPts = getCameraPtsFromWorldPts(i, world_pts);
     validPts = logical(getValidPts(i, cameraPts));
     imagePts = getImagePtsFromCameraPts(cameraPts);
     imagePts_linear = linearizePts(i, imagePts);
     imagePts_linear = imagePts_linear(validPts);
     
-    imageData = imread(i.img);
+    %imageData = imread(i.img);
     validPts = reshape(validPts, size(p.outputImg(:,:,1)));
         
     for cInd = 1:size(i.classifications,2)
         if (exist(i.classifications{cInd}, 'file') == 2)
             clData = load(i.classifications{cInd}, '-mat');
-            clData = clData.imgClass;
+            if (cInd == 1)
+                clData = clData.tmpImg;
+            else
+                clData = clData.imgClass;
+            end
+            
+            %update counts
+            numVotes(validPts) = numVotes(validPts) + 1;
+            
+            newVotes = clData(imagePts_linear)';
+            
+            keyb
+            %convert from 1, 0, to 1, -1
+            newVotes = newVotes * 5;
+            newVotes = newVotes - 1;
             
             currClassMask = zeros(p.height, p.width);
-            currClassMask(validPts) = clData(imagePts_linear)';
-            p.outputImg(:,:,1) = p.outputImg(:,:,1) + curr
-            keyboard
+            currClassMask(validPts) = newVotes;
+            
+            
+            
+            p.outputImg(:,:,1) = p.outputImg(:,:,1) + currClassMask;
+            
+            %masks(:,:,maskInd) = currClassMask;
+            %maskInd = maskInd + 1;
+            
         end
     end
     
@@ -43,11 +67,15 @@ for imgInd = 1:size(p.images,2)
     %    tmp_dest(validPts) = tmp_img(imagePts_linear)';
     %    p.outputImg(:,:,chan) = tmp_dest;
     %end
-    
-    keyboard
-
 end
 
+%save('allMasks', 'masks', '-v7.3');
+
+p.outputImg(:,:,1) = max(p.outputImg(:,:,1),0);
+p.outputImg(:,:,1) = p.outputImg(:,:,1) ./ numVotes;
+
+maxVal = max(max(p.outputImg(:,:,1)));
+p.outputImg = p.outputImg / maxVal;
 end
 
 function im_pts_linear = linearizePts(i, im_pts)

@@ -1,0 +1,540 @@
+Y:\data\LBNL\20120312-1\images\leftCameraPostProcessed/left/Camera_110732781_Image000203.jpg for plane 1
+| -7012.02 -9762.6 429.29 |
+| 0.534825 0.475739 -0.503339 0.48403 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\leftCameraPostProcessed/left/Camera_110732781_Image000204.jpg for plane 1
+| -7249.87 -9727.11 445.791 |
+| 0.519091 0.469921 -0.514368 0.495121 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\leftCameraPostProcessed/left/Camera_110732781_Image000205.jpg for plane 1
+| -7493.34 -9715.84 424.434 |
+| 0.520153 0.471375 -0.51512 0.491832 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\leftCameraPostProcessed/left/Camera_110732781_Image000206.jpg for plane 1
+| -7721.73 -9710.1 428.532 |
+| 0.532569 0.474404 -0.512501 0.478178 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\leftCameraPostProcessed/left/Camera_110732781_Image000207.jpg for plane 1
+| -7942.87 -9684.96 434.546 |
+| 0.533631 0.467464 -0.511754 0.484586 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\leftCameraPostProcessed/left/Camera_110732781_Image000208.jpg for plane 1
+| -8183.17 -9647.28 408.215 |
+| 0.533962 0.469467 -0.508065 0.486165 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\leftCameraPostProcessed/left/Camera_110732781_Image000209.jpg for plane 1
+| -8403.87 -9599.8 422.695 |
+| 0.536618 0.480237 -0.49761 0.483526 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\leftCameraPostProcessed/left/Camera_110732781_Image000210.jpg for plane 1
+| -8636.44 -9568.56 442.94 |
+| 0.523746 0.476015 -0.504853 0.49419 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\leftCameraPostProcessed/left/Camera_110732781_Image000211.jpg for plane 1
+| -8851.41 -9546.86 418.561 |
+| 0.522386 0.471627 -0.505998 0.498646 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\leftCameraPostProcessed/left/Camera_110732781_Image000212.jpg for plane 1
+| -9090.08 -9542.48 418.716 |
+| 0.537893 0.473831 -0.505885 0.479829 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\leftCameraPostProcessed/left/Camera_110732781_Image000213.jpg for plane 1
+| -9316.03 -9517.3 440.11 |
+| 0.538141 0.460611 -0.513751 0.484047 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\leftCameraPostProcessed/left/Camera_110732781_Image000214.jpg for plane 1
+| -9548.13 -9477.35 416.888 |
+| 0.533714 0.460364 -0.513155 0.489782 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\leftCameraPostProcessed/left/Camera_110732781_Image000215.jpg for plane 1
+| -9779.82 -9437.64 426.656 |
+| 0.534536 0.467835 -0.507133 0.488077 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\leftCameraPostProcessed/left/Camera_110732781_Image000216.jpg for plane 1
+| -10005.6 -9408.86 458.405 |
+| 0.519379 0.466924 -0.511673 0.500418 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\leftCameraPostProcessed/left/Camera_110732781_Image000217.jpg for plane 1
+| -10236.6 -9391.16 424.78 |
+| 0.519434 0.465928 -0.50578 0.507234 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\leftCameraPostProcessed/left/Camera_110732781_Image000218.jpg for plane 1
+| -10474.9 -9390.32 418.248 |
+| 0.532053 0.469064 -0.495197 0.501677 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\leftCameraPostProcessed/left/Camera_110732781_Image000219.jpg for plane 1
+| -10719.9 -9377.39 441.011 |
+| 0.533414 0.454713 -0.505326 0.503341 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\leftCameraPostProcessed/left/Camera_110732781_Image000220.jpg for plane 1
+| -10940.4 -9353.06 414.327 |
+| 0.534479 0.454568 -0.508214 0.499419 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\leftCameraPostProcessed/left/Camera_110732781_Image000221.jpg for plane 1
+| -11165.7 -9307.35 425.578 |
+| 0.536343 0.465394 -0.501632 0.494075 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\leftCameraPostProcessed/left/Camera_110732781_Image000222.jpg for plane 1
+| -11395 -9276.45 452.625 |
+| 0.522793 0.462912 -0.508338 0.503976 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\leftCameraPostProcessed/left/Camera_110732781_Image000223.jpg for plane 1
+| -11603.6 -9266.3 424.991 |
+| 0.51578 0.467554 -0.508207 0.50704 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\leftCameraPostProcessed/left/Camera_110732781_Image000224.jpg for plane 1
+| -11807 -9261.15 429.453 |
+| 0.520074 0.482146 -0.495708 0.501331 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\leftCameraPostProcessed/left/Camera_110732781_Image000225.jpg for plane 1
+| -12018.8 -9239.37 440.852 |
+| 0.516398 0.468849 -0.501633 0.51174 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\leftCameraPostProcessed/left/Camera_110732781_Image000226.jpg for plane 1
+| -12231.9 -9219.23 421.209 |
+| 0.5177 0.46194 -0.502373 0.515966 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\leftCameraPostProcessed/left/Camera_110732781_Image000227.jpg for plane 1
+| -12451.3 -9191.26 440.313 |
+| 0.522253 0.461356 -0.499913 0.514285 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\leftCameraPostProcessed/left/Camera_110732781_Image000228.jpg for plane 1
+| -12662.3 -9170.86 460.063 |
+| 0.507449 0.460968 -0.502556 0.526728 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\leftCameraPostProcessed/left/Camera_110732781_Image000229.jpg for plane 1
+| -12864.9 -9174.64 441.376 |
+| 0.5024 0.458295 -0.50403 0.53246 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\leftCameraPostProcessed/left/Camera_110732781_Image000230.jpg for plane 1
+| -13072.4 -9197.81 425.685 |
+| 0.515133 0.467673 -0.494343 0.5211 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\leftCameraPostProcessed/left/Camera_110732781_Image000231.jpg for plane 1
+| -13275.1 -9211.89 439.886 |
+| 0.521615 0.460592 -0.502074 0.513513 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\leftCameraPostProcessed/left/Camera_110732781_Image000232.jpg for plane 1
+| -13492.3 -9206.44 420.779 |
+| 0.527225 0.455089 -0.509666 0.505143 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\leftCameraPostProcessed/left/Camera_110732781_Image000233.jpg for plane 1
+| -13721.9 -9188.31 414.061 |
+| 0.543343 0.45877 -0.510033 0.483916 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\leftCameraPostProcessed/left/Camera_110732781_Image000234.jpg for plane 1
+| -13954.2 -9159.26 448.455 |
+| 0.53493 0.45316 -0.520746 0.487154 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\leftCameraPostProcessed/left/Camera_110732781_Image000235.jpg for plane 1
+| -14186.7 -9133.85 430.367 |
+| 0.528959 0.449666 -0.525373 0.491921 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\leftCameraPostProcessed/left/Camera_110732781_Image000236.jpg for plane 1
+| -14433.7 -9118.61 416.212 |
+| 0.534849 0.462091 -0.51815 0.481591 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\rightCameraPostProcessed/right/Camera_110732692_Image000931.jpg for plane 1
+| -13837.9 -11388.9 481.285 |
+| 0.164858 0.685829 0.257256 -0.660515 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\rightCameraPostProcessed/right/Camera_110732692_Image000932.jpg for plane 1
+| -13879.8 -11426.7 474.472 |
+| 0.201962 0.675625 0.286073 -0.648772 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\rightCameraPostProcessed/right/Camera_110732692_Image000933.jpg for plane 1
+| -13914.3 -11465.8 468.801 |
+| 0.242058 0.660504 0.322177 -0.633517 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\rightCameraPostProcessed/right/Camera_110732692_Image000934.jpg for plane 1
+| -13936 -11503.6 462.695 |
+| 0.27076 0.649349 0.353234 -0.616653 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\rightCameraPostProcessed/right/Camera_110732692_Image000935.jpg for plane 1
+| -13958.7 -11556.1 460.862 |
+| 0.298357 0.63614 0.380996 -0.600959 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\rightCameraPostProcessed/right/Camera_110732692_Image000936.jpg for plane 1
+| -13968.9 -11586.9 463.155 |
+| 0.323868 0.617172 0.41061 -0.587885 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\rightCameraPostProcessed/right/Camera_110732692_Image000937.jpg for plane 1
+| -13978.8 -11626.2 456.733 |
+| 0.351886 0.599329 0.440091 -0.568596 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\rightCameraPostProcessed/right/Camera_110732692_Image000938.jpg for plane 1
+| -13990 -11672.2 452.484 |
+| 0.381726 0.580192 0.465526 -0.548587 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\rightCameraPostProcessed/right/Camera_110732692_Image000939.jpg for plane 1
+| -13994.8 -11730.1 458.182 |
+| 0.414774 0.554582 0.492253 -0.527341 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\rightCameraPostProcessed/right/Camera_110732692_Image000940.jpg for plane 1
+| -13989.6 -11784.4 458.978 |
+| 0.447769 0.521266 0.526722 -0.500349 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\leftCameraPostProcessed/left/Camera_110732781_Image000961.jpg for plane 1
+| -13347.5 -11942.5 456.245 |
+| 0.700263 0.133991 -0.667029 0.216218 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\leftCameraPostProcessed/left/Camera_110732781_Image000960.jpg for plane 1
+| -13327.9 -11973.9 453.763 |
+| 0.699902 0.130987 -0.671103 0.206397 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\leftCameraPostProcessed/left/Camera_110732781_Image000200.jpg for plane 1
+| -6315.29 -9896.13 411.913 |
+| 0.538207 0.487677 -0.493528 0.478472 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\leftCameraPostProcessed/left/Camera_110732781_Image000201.jpg for plane 1
+| -6542.06 -9870.14 418.004 |
+| 0.534504 0.478265 -0.505047 0.480099 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\leftCameraPostProcessed/left/Camera_110732781_Image000202.jpg for plane 1
+| -6787.33 -9813.86 394.459 |
+| 0.538492 0.475484 -0.50169 0.481922 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\rightCameraPostProcessed/right/Camera_110732692_Image000941.jpg for plane 1
+| -13976.7 -11852.9 456.116 |
+| 0.476406 0.486352 0.561841 -0.469931 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\leftCameraPostProcessed/left/Camera_110732781_Image000959.jpg for plane 1
+| -13315 -12008.9 447.059 |
+| 0.709568 0.124572 -0.666954 0.190177 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\leftCameraPostProcessed/left/Camera_110732781_Image000185.jpg for plane 1
+| -2947.16 -10185.6 434.145 |
+| 0.541185 0.484216 -0.50531 0.466171 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\leftCameraPostProcessed/left/Camera_110732781_Image000186.jpg for plane 1
+| -3177.25 -10154.4 411.671 |
+| 0.534211 0.481446 -0.506093 0.476129 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\leftCameraPostProcessed/left/Camera_110732781_Image000187.jpg for plane 1
+| -3399.14 -10141.5 397.163 |
+| 0.54063 0.495215 -0.494773 0.466563 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\leftCameraPostProcessed/left/Camera_110732781_Image000188.jpg for plane 1
+| -3625.88 -10126.2 418.846 |
+| 0.546598 0.490649 -0.495505 0.463649 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\leftCameraPostProcessed/left/Camera_110732781_Image000189.jpg for plane 1
+| -3866.8 -10082.4 406.723 |
+| 0.537722 0.489558 -0.499593 0.470738 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\leftCameraPostProcessed/left/Camera_110732781_Image000190.jpg for plane 1
+| -4108.88 -10035.9 391.993 |
+| 0.541505 0.498098 -0.491482 0.465957 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\leftCameraPostProcessed/left/Camera_110732781_Image000191.jpg for plane 1
+| -4331.74 -10000.4 434.205 |
+| 0.526343 0.50142 -0.492583 0.478439 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\leftCameraPostProcessed/left/Camera_110732781_Image000192.jpg for plane 1
+| -4561.8 -9987.26 423.136 |
+| 0.515617 0.497591 -0.49591 0.490526 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\leftCameraPostProcessed/left/Camera_110732781_Image000193.jpg for plane 1
+| -4801.36 -9995.15 400.918 |
+| 0.52731 0.498326 -0.485035 0.488218 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\leftCameraPostProcessed/left/Camera_110732781_Image000194.jpg for plane 1
+| -5016.51 -10000.1 427.929 |
+| 0.525714 0.486658 -0.494358 0.492341 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\leftCameraPostProcessed/left/Camera_110732781_Image000195.jpg for plane 1
+| -5245.34 -9988.47 416.717 |
+| 0.527075 0.481592 -0.498182 0.492012 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\leftCameraPostProcessed/left/Camera_110732781_Image000196.jpg for plane 1
+| -5489.75 -9951.72 384.524 |
+| 0.540179 0.489165 -0.484082 0.484344 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\leftCameraPostProcessed/left/Camera_110732781_Image000197.jpg for plane 1
+| -5712.23 -9918.54 421.901 |
+| 0.532235 0.489221 -0.486167 0.490949 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\leftCameraPostProcessed/left/Camera_110732781_Image000198.jpg for plane 1
+| -5926.08 -9902.13 414.918 |
+| 0.524443 0.487689 -0.490233 0.49678 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\leftCameraPostProcessed/left/Camera_110732781_Image000199.jpg for plane 1
+| -6111.85 -9907.19 390.791 |
+| 0.531911 0.492841 -0.489324 0.4845 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\rightCameraPostProcessed/right/Camera_110732692_Image001105.jpg for plane 1
+| -11136.3 -12393.7 480.81 |
+| -0.313609 -0.622227 -0.353271 0.624245 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\rightCameraPostProcessed/right/Camera_110732692_Image001106.jpg for plane 1
+| -11141.3 -12438.2 480.182 |
+| -0.347647 -0.599268 -0.392769 0.604774 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\rightCameraPostProcessed/right/Camera_110732692_Image001107.jpg for plane 1
+| -11160.4 -12504.4 483.326 |
+| -0.383901 -0.57279 -0.43366 0.58006 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\rightCameraPostProcessed/right/Camera_110732692_Image001108.jpg for plane 1
+| -11165.7 -12566.1 489.775 |
+| -0.414689 -0.541132 -0.474773 0.556597 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\rightCameraPostProcessed/right/Camera_110732692_Image001109.jpg for plane 1
+| -11168.3 -12612.6 488.504 |
+| -0.453662 -0.510274 -0.505987 0.527056 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\rightCameraPostProcessed/right/Camera_110732692_Image001110.jpg for plane 1
+| -11154.8 -12669.6 487.623 |
+| 0.482473 0.476793 0.53955 -0.498772 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\rightCameraPostProcessed/right/Camera_110732692_Image001104.jpg for plane 1
+| -11107.4 -12369.7 487.327 |
+| -0.268984 -0.640801 -0.325457 0.64117 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\rightCameraPostProcessed/right/Camera_110732692_Image001103.jpg for plane 1
+| -11068.1 -12332 488.232 |
+| 0.230303 0.659899 0.292398 -0.652685 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\leftCameraPostProcessed/left/Camera_110732781_Image000237.jpg for plane 1
+| -14672.8 -9094.39 457.448 |
+| 0.534151 0.448469 -0.52579 0.486933 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\leftCameraPostProcessed/left/Camera_110732781_Image000958.jpg for plane 1
+| -13332.6 -12048.9 440.796 |
+| 0.714156 0.108399 -0.670494 0.169321 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\rightCameraPostProcessed/right/Camera_110732692_Image001111.jpg for plane 1
+| -11132 -12735 489.602 |
+| 0.505338 0.443306 0.57307 -0.468727 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\rightCameraPostProcessed/right/Camera_110732692_Image001247.jpg for plane 1
+| -9327.87 -12447.9 489.205 |
+| 0.44955 0.498259 0.536155 -0.512036 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\rightCameraPostProcessed/right/Camera_110732692_Image001391.jpg for plane 1
+| -6365.75 -12628.4 461.937 |
+| 0.334947 0.620207 0.386921 -0.594513 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\rightCameraPostProcessed/right/Camera_110732692_Image001392.jpg for plane 1
+| -6391.86 -12700.5 456.79 |
+| 0.37589 0.595561 0.427685 -0.566656 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\rightCameraPostProcessed/right/Camera_110732692_Image001393.jpg for plane 1
+| -6408.37 -12775.4 459.324 |
+| 0.415586 0.565117 0.465012 -0.540088 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\rightCameraPostProcessed/right/Camera_110732692_Image001394.jpg for plane 1
+| -6412.55 -12831.7 461.193 |
+| 0.4594 0.531002 0.4949 -0.511921 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\rightCameraPostProcessed/right/Camera_110732692_Image001395.jpg for plane 1
+| -6396.6 -12882.5 466.037 |
+| 0.491244 0.492816 0.532018 -0.482461 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\rightCameraPostProcessed/right/Camera_110732692_Image001246.jpg for plane 1
+| -9335.29 -12390.9 467.175 |
+| -0.421678 -0.530805 -0.505164 0.534082 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\rightCameraPostProcessed/right/Camera_110732692_Image001389.jpg for plane 1
+| -6311.71 -12529.2 476.986 |
+| 0.248331 0.658773 0.311966 -0.637987 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\rightCameraPostProcessed/right/Camera_110732692_Image001390.jpg for plane 1
+| -6344.54 -12579.2 467.842 |
+| 0.296877 0.641441 0.349165 -0.615225 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\rightCameraPostProcessed/right/Camera_110732692_Image001245.jpg for plane 1
+| -9340.58 -12343.5 454.004 |
+| 0.396674 0.559844 0.474341 -0.551566 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\rightCameraPostProcessed/right/Camera_110732692_Image001248.jpg for plane 1
+| -9321.43 -12507.1 490.623 |
+| 0.484934 0.462262 0.561274 -0.485926 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\rightCameraPostProcessed/right/Camera_110732692_Image001243.jpg for plane 1
+| -9307.47 -12269.9 469.963 |
+| 0.315099 0.612281 0.423718 -0.588462 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
+Y:\data\LBNL\20120312-1\images\rightCameraPostProcessed/right/Camera_110732692_Image001244.jpg for plane 1
+| -9331.82 -12308.5 418.278 |
+| 0.356532 0.587457 0.449882 -0.570426 |
+| 612 0 1224 |
+| 0 612 1024 |
+| 0 0 1 |
