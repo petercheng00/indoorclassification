@@ -11,7 +11,6 @@ safid = fopen(sortedAtlasFile);
 firstLine = fgets(safid);
 while ischar(firstLine)
     newPlaneImg = plane_img();
-    
     index = strfind(firstLine, '_');
     index = index(end);
     maskFile = firstLine(1:index);

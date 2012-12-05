@@ -2,20 +2,25 @@ addpath util
 
 %%%INPUT PARAMETERS%%%
 
-modelFile = 'F:\projects\indoorclassification\data\input\lbnl\model\revit\lbnlv2.model';
+modelFile = 'F:\projects\indoorclassification\data\input\cory3rdfloor\model\revit\cory3rdfloorv4.model"';
+
+%in here, Z corresponds to \\amol\CS280FinalProject
+%Y corresponds to \\behshahr\indoormapping
+
+
 
 %first plane is plane 1
-planesToUse = 1:57;
-sortedAtlasFile = 'F:\projects\indoorclassification\data\input\lbnl\output\imagesFile.txt';
-imagesDir = 'Y:\data\LBNL\20120312-1\images';
-lightClassificationDir = 'Z:\ClassImgOutputs\light\LBNL\20120312-1';
+planesToUse = 1:48;
+sortedAtlasFile = 'F:\projects\indoorclassification\data\input\cory3rdfloor\model\revit\output\imagesFile.txt';
+imagesDir = 'Y:\data\CoryHall\20121119-1\images';
+lightClassificationDir = 'Z:\ClassImgOutputs\light\CoryHall\20121119-1';
 windowClassificationDir = 'Z:\ClassImgOutputs\window';
 classificationDirs = {lightClassificationDir, windowClassificationDir};
 
 %%%OUTPUT PARAMETERS%%%
-outputDir = 'F:\projects\indoorclassification\data\output\visualized\lbnl';
-outputMapFile = 'lbnlMap.map';
-outputRPInputFile = 'lbnlRPInput.rpinput';
+outputDir = 'F:\projects\indoorclassification\data\output\visualized\cory';
+outputMapFile = 'coryMap.map';
+outputRPInputFile = 'coryRPInput.rpinput';
 
 disp('loading planes');
 planes = loadPlanes(modelFile, outputDir);

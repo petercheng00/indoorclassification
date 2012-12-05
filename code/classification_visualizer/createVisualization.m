@@ -49,13 +49,13 @@ for imgInd = 1:size(p.images,2)
             if sum(sum(newVotes)) == 0
                 continue;
             end
+            
+            
             %newVotes = newVotes * (numel(newVotes)/sum(sum(newVotes)));
             newVotes = newVotes * 5;
             newVotes = newVotes - 1;
             currClassMask = zeros(p.height, p.width);
             currClassMask(validPts) = newVotes;
-            
-            
             
             p.outputImg(:,:,1) = p.outputImg(:,:,1) + currClassMask;
             

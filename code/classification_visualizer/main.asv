@@ -2,13 +2,13 @@ addpath util
 
 %%%INPUT PARAMETERS%%%
 
-modelFile = 'F:\projects\indoorclassification\data\input\lbnl\model\revit\lbnlv2.model';
+modelFile = 'F:\projects\indoorclassification\data\input\cory3rdfloor\model\revit\cory3rdfloorv4.model"';
 
 %first plane is plane 1
-planesToUse = 2;
-sortedAtlasFile = 'F:\projects\indoorclassification\data\input\lbnl\output\imagesFile1.txt';
-imagesDir = 'Y:\data\LBNL\20120312-1\images';
-lightClassificationDir = 'Z:\ClassImgOutputs\light\LBNL\20120312-1';
+planesToUse = 1:48;
+sortedAtlasFile = 'F:\projects\indoorclassification\data\input\cory3rdfloor\model\revit\output\imagesFile.txt';
+imagesDir = 'Y:\data\CoryHall\20121119-1\images';
+lightClassificationDir = 'Z:\ClassImgOutputs\light\CoryHall\20121119-1';
 windowClassificationDir = 'Z:\ClassImgOutputs\window';
 classificationDirs = {lightClassificationDir, windowClassificationDir};
 
