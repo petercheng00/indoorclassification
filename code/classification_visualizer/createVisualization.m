@@ -10,7 +10,7 @@ world_pts = getWorldPtsFromPlanePts(p, plane_pts);
 %masks = zeros(p.height, p.width, 0);
 %maskInd = 1;
 
-for imgInd = 1:size(p.images,2)
+for imgInd = 1:1:size(p.images,2)
 
     disp(['plane ', num2str(planeNum), ', img ', num2str(imgInd), ' of ', num2str(size(p.images,2))]);
     i = p.images(imgInd);
@@ -27,11 +27,12 @@ for imgInd = 1:size(p.images,2)
     imagePts = getImagePtsFromCameraPts(cameraPts);
     imagePts_linear = linearizePts(i, imagePts);
     imagePts_linear = imagePts_linear(validPts);
-    
+
     %imageData = imread(i.img);
     validPts = reshape(validPts, size(p.outputImg(:,:,1)));
         
     for cInd = 1:size(i.classifications,2)
+        i.classifications{cInd}
         if (exist(i.classifications{cInd}, 'file') == 2)
             clData = load(i.classifications{cInd}, '-mat');
             if (cInd == 1)
@@ -43,40 +44,54 @@ for imgInd = 1:size(p.images,2)
             %update counts
             numVotes(validPts) = numVotes(validPts) + 1;
             
-            newVotes = clData(imagePts_linear)';
+            clDataStats = regionprops(clData, 'Area', 'PixelIdxList','ConvexHull', 'Centroid');
+            
+            clArea = size(clData, 1) * size(clData, 2);
+            clDataWeight = uint8(repmat(clData,[1,1]));
+            
+            for k = 1:size(clDataStats, 1)
+                if clDataStats(k).Area < 0.05 * clArea || size(clDataStats(k).ConvexHull, 1) <= 3
+                    clDataWeight(clDataStats(k).PixelIdxList) = 0;
+                else
+                    scalefactor = double(0.05*clArea)/clDataStats(k).Area;
+                    disp(scalefactor);
+                    for j = 1:size(clDataStats(k).PixelIdxList, 1)
+                        index = clDataStats(k).PixelIdxList(j);
+                        clDataWeight(index) = (clDataWeight(index) + 255) * scalefactor;
+                    end
+                end
+%                 myCentroid = round(clDataStats(i).Centroid);
+%                 if clData(myCentroid(1), myCentroid(2)) == 0
+%                    clData(clDataStats(i).PixelIdxList) = 0;
+%                    continue
+%                 end
+            end
+            
+%             imshow(clDataWeight);
+                        
+%             keyboard
+            
+            newVotes = clDataWeight(imagePts_linear)';
             
             %convert from 1, 0, to 1, -1
             if sum(sum(newVotes)) == 0
                 continue;
             end
-            
-            
+                        
             %newVotes = newVotes * (numel(newVotes)/sum(sum(newVotes)));
-            newVotes = newVotes * 5;
-            newVotes = newVotes - 1;
+%             newVotes = newVotes * 5;
+%             newVotes = newVotes - 1;
             currClassMask = zeros(p.height, p.width);
             currClassMask(validPts) = newVotes;
             
             p.outputImg(:,:,1) = p.outputImg(:,:,1) + currClassMask;
             
-            %masks(:,:,maskInd) = currClassMask;
-            %maskInd = maskInd + 1;
+%             figure, imshow(clData);
             
         end
     end
-    
-    %%Image Method
-    %
-    %keyboard
-    %for chan = 1:3
-    %    tmp_img = imageData(:,:,chan);
-    %    tmp_dest = p.outputImg(:,:,chan);
-    %    tmp_dest(validPts) = tmp_img(imagePts_linear)';
-    %    p.outputImg(:,:,chan) = tmp_dest;
-    %end
-end
 
-%save('allMasks', 'masks', '-v7.3');
+end
 
 p.outputImg(:,:,1) = max(p.outputImg(:,:,1),0);
 p.outputImg(:,:,1) = p.outputImg(:,:,1) ./ numVotes;
